@@ -1,0 +1,43 @@
+  
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav{
+    background-color:  #0c6a93;
+    width: 100%;
+    height: 35px;
+    display: flex;
+    
+    align-items: center;
+}
+.logoNav{
+    color: white;
+    padding-left: 10px;
+    font-size: 25px;
+}
+.logo{
+    background-color: white;
+    width: 60px;
+    height: 30px;
+    margin: 0 auto;
+}
+.sideNav{
+    height: 100%;
+    width: 232px;
+}
+.topNavSide{
+    display: flex;
+    justify-content: space-between;
+    background-color: #0c6a93;
+    align-items: center;
+    height: 35px;
+}
+.logoUser{
+    color: white;
+    padding-left: 10px;
+}
+.logoNotification{
+
+}

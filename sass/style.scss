@@ -1,0 +1,111 @@
+  
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+$colorIcon: white;
+$color-background-page: #0c6a93;
+$color-boxItems-navSide: #145374;
+$color-font: white;
+$font-page : monospace;
+
+
+.container-logos{
+    background-color: $color-background-page;
+    width: 100%;
+    height: 35px;
+    display: flex;
+    align-items: center;
+}
+.logoNav{
+    color: $colorIcon;
+    padding-left: 10px;
+    font-size: 25px;
+}
+.logo{
+    background-color: white;
+    width: 60px;
+    height: 30px;
+    margin: 0 auto;
+}
+
+.sideNav{
+    width: 240px;
+    background-color: $color-background-page;
+    position: relative;
+    left: -240px;
+    transition: all ease 0.25s;
+    top: -36px;
+    .topNavSide{
+        display: flex;
+        justify-content: space-between;
+        height: 35px;
+        align-items: center;
+    }
+    .logoUser{
+        color: $colorIcon;
+        padding-left: 10px;
+    }
+    .logoNotification{
+    color: $colorIcon;
+    padding-right: 10px;
+    }
+    .spaceNav{
+        height: 25px;
+        background-color: $color-background-page;
+    }
+    .boxItems{
+        display: flex;
+        flex-direction: column;
+
+        .item{
+            color: $color-font;
+            background-color: $color-boxItems-navSide;
+            font-family: $font-page;
+            color: white;
+            border-bottom: 1px solid rgba(0,0,0,0.5);
+            border-top: 1px solid $color-background-page;
+            font-size: 13px;
+            padding: 13px 0 13px 6px;
+        }
+        .spaceItem{
+            padding-left: 15px
+        }
+    }
+    .container-options{
+        display: flex;
+        flex-direction: row;
+        color: white;
+        font-family: $font-page;
+        font-size: 13px;
+        justify-content:center;
+        padding-top:4px;
+
+    }
+    .spaceOptions{
+        margin: 0 5px;
+    }
+    .socialMedia{
+        color: $colorIcon;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-top:14px;
+        font-size: 22px;
+        .spaceMedia{
+            padding: 0 15px;
+        }
+    }
+    .footerNavSide{
+        height: 40px;
+        background-color: white;
+        height: 61px;
+        border: solid 2px black;
+        margin: 14px;
+    }
+    .space-bottom{
+        background-color: $color-background-page;
+        height: 20px;
+    }
+}

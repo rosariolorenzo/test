@@ -4,11 +4,15 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+a {
+	color: white;
+	text-decoration: none;
+}
 $colorIcon: white;
 $color-background-page: #0c6a93;
 $color-boxItems-navSide: #145374;
 $color-font: white;
-$font-page : monospace;
+$font-page : sans-serif;
 
 
 .container-header{
@@ -133,6 +137,7 @@ $font-page : monospace;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	max-width: 1280px;
 }
 .container-img{
 	
@@ -234,7 +239,7 @@ $font-page : monospace;
 		display: flex;
 		height: 80px;
 		width: 100%;
-		color: #f3ecc2;
+		background-color: #f3ecc2;
 		flex-direction: row;
 		padding: 6px;
 		
@@ -246,13 +251,16 @@ $font-page : monospace;
 		}
 		
 		.banner{
-			margin-top: 5px;
-			margin-left: 56px;
-			margin-right: 415px;
-			height: 50px;
-			width: 500px;
-			border: 1px solid black;
-			background-color: white;
+			flex-grow: 1;
+			.banner-content {
+				margin-top: 5px;
+				margin-left: 56px;
+				margin-right: 415px;
+				height: 50px;
+				width: 500px;
+				border: 1px solid black;
+				background-color: white;
+			}
 		}
 		
 		.state{
@@ -363,6 +371,22 @@ $font-page : monospace;
 	.optionsTop{
 		display: none;
 	}
+	.hash-container {
+		display: flex;
+		align-items: center;
+		padding: 0 30px;
+		margin-bottom: 10px;
+		.hash-item {
+			color: #0c6a93;
+			font-size: 14px;
+			margin: 0 5px;
+
+			&:first-child {
+				margin-left: 0;
+			}
+
+		}
+	}
 	.container-optiones-dekstop{
 		padding-left: 50px;
 		display: flex;
@@ -370,28 +394,75 @@ $font-page : monospace;
 		position: relative;
 		margin-top: 10px;
 		border-bottom: 1px solid $color-background-page;
+		margin-bottom: 15px;
+
+		.option-desktop-right {
+			display: flex;
+			justify-self: flex-end;
+			flex-grow: 1;
+			text-align: right;
+			font-weight: 600;
+			color: #0c6a93;
+			justify-content: flex-end;
+			align-items: center;
+			margin-right: 30px;
+		}
 		
 		.option-dekstop{
 			height: 25px;
-			color: #5e81a4;
-			background: #dde9f5;
-			margin: 0 2px 0 0;
-			border: 1px solid #8bb3da;
-			font-size: 16px;
-			border-radius: 8%;
 			
-			.option-dekstop:active {
+			background: #dde9f5;
+			margin: 0 4px 0 0;
+			padding: 5px;
+			border: 1px solid #8bb3da;
+			font-size: 14px;
+			border-radius: 4px 4px 0 0;
+			
+			&.active {
 				text-decoration: none;
 				background: #fff;
-				color: #dc5500;
 				border-bottom: none;
 				position: relative;
 				z-index: 2;
 				border-bottom: 1px solid #fff;
+				a {
+					color: #dc5500;
+				}
 				
+			}
+			a {
+				color: #5e81a4;
 			}
 			
 		}
 		
+	}
+	.grid-wrapper {
+		display: flex;
+		justify-content: space-between;
+	}
+	.banner-desktop {
+		width: 300px;
+		min-height: 100%;
+		background: rgba(0,0,0,0.2);
+		display: flex;
+    flex-direction: column;
+		margin-right: 10px;
+		.dismiss-banner {
+			text-transform: uppercase;
+			color: white;
+			background-color: #f47321;
+			font-family: sans-serif;
+			padding: 5px 10px;
+		}
+		.banner-content {
+			margin: 10px 20px;
+			display: flex;
+			flex-direction: column;
+			flex-grow: 1;
+			background: white;
+			border: 5px solid black;
+		
+		}
 	}
 }

@@ -1,9 +1,8 @@
-let logoNav = document.getElementById('logoNav').addEventListener('click', function(){
 
-    let sideNav = document.getElementById('sideNav');
+let pageWrapper = document.getElementById('page-wrapper');
+let sideNavOpen = false;
+document.getElementById('logoNav').addEventListener('click',toggleSidebar)
 
-    sideNav.style.left= '0';
-
-
-
-})
+function toggleSidebar() {
+    pageWrapper.classList.toggle('open-sidebar');
+}

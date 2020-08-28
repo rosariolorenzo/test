@@ -6,3 +6,5 @@ document.getElementById('logoNav').addEventListener('click',toggleSidebar)
 function toggleSidebar() {
     pageWrapper.classList.toggle('open-sidebar');
 }
+
+

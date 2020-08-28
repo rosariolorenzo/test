@@ -25,17 +25,27 @@ a {
 
 .logo {
   background-color: white;
-  width: 60px;
   height: 30px;
+  width: 124px;
   margin: 0 auto;
 }
 
 .open-sidebar .sideNav {
   margin-left: 0;
 }
-
 .open-sidebar .body-site {
   margin-left: 240px;
+  position: absolute;
+  cursor: pointer;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  top: 0;
+  bottom: 0;
+  z-index: 1001;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 
 .sideNav {
@@ -44,36 +54,34 @@ a {
   position: absolute;
   margin-left: -240px;
   transition: all ease 0.25s;
-  top: 0px;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  z-index: 9999;
+  overflow: auto;
 }
-
 .sideNav .topNavSide {
   display: flex;
   justify-content: space-between;
   height: 35px;
   align-items: center;
 }
-
 .sideNav .logoUser {
   color: white;
   padding-left: 10px;
 }
-
 .sideNav .logoNotification {
   color: white;
   padding-right: 10px;
 }
-
 .sideNav .spaceNav {
   height: 25px;
   background-color: #0c6a93;
 }
-
 .sideNav .boxItems {
   display: flex;
   flex-direction: column;
 }
-
 .sideNav .boxItems .item {
   color: white;
   background-color: #145374;
@@ -84,11 +92,9 @@ a {
   font-size: 13px;
   padding: 13px 0 13px 6px;
 }
-
 .sideNav .boxItems .spaceItem {
   padding-left: 15px;
 }
-
 .sideNav .container-options {
   display: flex;
   flex-direction: row;
@@ -98,11 +104,9 @@ a {
   justify-content: center;
   padding-top: 4px;
 }
-
 .sideNav .spaceOptions {
   margin: 0 5px;
 }
-
 .sideNav .socialMedia {
   color: white;
   display: flex;
@@ -111,11 +115,9 @@ a {
   padding-top: 14px;
   font-size: 22px;
 }
-
 .sideNav .socialMedia .spaceMedia {
   padding: 0 15px;
 }
-
 .sideNav .footerNavSide {
   height: 40px;
   background-color: white;
@@ -123,7 +125,6 @@ a {
   border: solid 2px black;
   margin: 14px;
 }
-
 .sideNav .space-bottom {
   background-color: #0c6a93;
   height: 20px;
@@ -135,7 +136,6 @@ a {
   justify-content: flex-end;
   align-items: center;
 }
-
 .optionsTop a {
   text-decoration: none;
   color: #0c6a93;
@@ -156,7 +156,6 @@ a {
   border-radius: 3px;
   background-color: #f0f1f1;
 }
-
 .container-img .box-img {
   background-color: grey;
   display: block;
@@ -164,13 +163,11 @@ a {
   width: 170px;
   position: relative;
 }
-
 .container-img .star {
   position: absolute;
   top: 5px;
   right: 5px;
 }
-
 .container-img .HD {
   position: absolute;
   right: 5px;
@@ -189,33 +186,27 @@ a {
   flex-direction: column;
   padding: 5px;
 }
-
 .box-name .container-name {
   display: flex;
   justify-content: space-between;
 }
-
 .box-name .container-name .name {
   color: #0c6a93;
   font-family: sans-serif;
   font-weight: 700;
   font-size: 14px;
 }
-
 .box-name .container-name .iconPerson {
   display: flex;
   color: #3a3a3a;
 }
-
 .box-name .container-name .iconPerson .number {
   margin-right: 7px;
 }
-
 .box-name .line {
   height: 1px;
   background-color: #3a3a3a;
 }
-
 .box-name .description {
   text-overflow: ellipsis;
   overflow: hidden;
@@ -224,7 +215,6 @@ a {
   font-size: 11px;
   color: #3a3a3a;
 }
-
 .box-name .description-views {
   height: 14px;
   line-height: 14px;
@@ -234,6 +224,10 @@ a {
   padding-left: 5px;
   text-overflow: ellipsis;
   overflow: hidden;
+}
+
+.banner-desktop {
+  display: none;
 }
 
 .container-banner {
@@ -265,18 +259,15 @@ a {
     flex-direction: row;
     padding: 6px;
   }
-
   .header-dekstop .logo-dekstop {
     height: 70px;
     width: 205px;
     border: 1px solid black;
     background-color: white;
   }
-
   .header-dekstop .banner {
     flex-grow: 1;
   }
-
   .header-dekstop .banner .banner-content {
     margin-top: 5px;
     margin-left: 56px;
@@ -286,7 +277,6 @@ a {
     border: 1px solid black;
     background-color: white;
   }
-
   .header-dekstop .state {
     border: solid 1px #0c6a93;
     border-radius: 3px;
@@ -299,7 +289,6 @@ a {
     background-color: #f0f1f1;
     height: 68px;
   }
-
   .header-dekstop .icon-state {
     display: flex;
     flex-direction: row;
@@ -310,32 +299,26 @@ a {
     padding: 6px;
     align-items: center;
   }
-
   .header-dekstop .log-user {
     font-family: sans-serif;
     font-size: 9px;
     padding: 3px;
   }
-
   .header-dekstop .log-user .state-log {
     padding-top: 4px;
   }
-
   .header-dekstop .log-user .space {
     margin-left: 16;
   }
-
   .header-dekstop .log-user .tokens-box {
     padding-top: 6px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
-
   .header-dekstop .log-user .tokens-box .bold {
     font-weight: bold;
   }
-
   .header-dekstop .log-user .tokens-box .orange-font {
     color: orange;
     font-weight: bold;
@@ -359,12 +342,10 @@ a {
     background: #0c6a93;
     border-bottom: 3px solid #f47321;
   }
-
   .nav-dekstop .items-nav {
     display: flex;
     flex-direction: row;
   }
-
   .nav-dekstop .items-nav .item-nav {
     text-shadow: 1px 1px 0 #000;
     padding: 6px 0 0;
@@ -373,11 +354,9 @@ a {
     text-align: center;
     font-size: 13px;
   }
-
   .nav-dekstop .items-nav .item-nav {
     margin: 5px;
   }
-
   .nav-dekstop .items-nav .item-nav a {
     text-decoration: none;
     color: white;
@@ -391,6 +370,7 @@ a {
     text-align: center;
     padding-top: 4px;
     font-size: 21px;
+    border-radius: 4px 4px 0 0;
   }
 
   .optionsTop {
@@ -401,15 +381,13 @@ a {
     display: flex;
     align-items: center;
     padding: 0 30px;
-    margin-bottom: 10px;
+    margin-bottom: 6px;
   }
-
   .hash-container .hash-item {
     color: #0c6a93;
-    font-size: 14px;
-    margin: 0 5px;
+    font-size: 12px;
+    margin: 0 12px;
   }
-
   .hash-container .hash-item:first-child {
     margin-left: 0;
   }
@@ -421,9 +399,8 @@ a {
     position: relative;
     margin-top: 10px;
     border-bottom: 1px solid #0c6a93;
-    margin-bottom: 15px;
+    margin-bottom: 8px;
   }
-
   .container-optiones-dekstop .option-desktop-right {
     display: flex;
     justify-self: flex-end;
@@ -435,7 +412,6 @@ a {
     align-items: center;
     margin-right: 30px;
   }
-
   .container-optiones-dekstop .option-dekstop {
     height: 25px;
     background: #dde9f5;
@@ -445,7 +421,6 @@ a {
     font-size: 14px;
     border-radius: 4px 4px 0 0;
   }
-
   .container-optiones-dekstop .option-dekstop.active {
     text-decoration: none;
     background: #fff;
@@ -454,11 +429,9 @@ a {
     z-index: 2;
     border-bottom: 1px solid #fff;
   }
-
   .container-optiones-dekstop .option-dekstop.active a {
     color: #dc5500;
   }
-
   .container-optiones-dekstop .option-dekstop a {
     color: #5e81a4;
   }
@@ -468,15 +441,27 @@ a {
     justify-content: space-between;
   }
 
+  .container-imgs {
+    width: 100%;
+    margin-right: 50px;
+  }
+
+  .container-img {
+    width: 240px;
+    height: 208;
+  }
+  .container-img .box-img {
+    width: 100%;
+  }
+
   .banner-desktop {
-    width: 300px;
-    min-height: 100%;
+    width: 230px;
+    text-align: center;
     background: rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
     margin-right: 10px;
   }
-
   .banner-desktop .dismiss-banner {
     text-transform: uppercase;
     color: white;
@@ -484,9 +469,8 @@ a {
     font-family: sans-serif;
     padding: 5px 10px;
   }
-
   .banner-desktop .banner-content {
-    margin: 10px 20px;
+    margin: 11px;
     display: flex;
     flex-direction: column;
     flex-grow: 1;
@@ -494,132 +478,5 @@ a {
     border: 5px solid black;
   }
 }
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
 
 /*# sourceMappingURL=style.css.map */

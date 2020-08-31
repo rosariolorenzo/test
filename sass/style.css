@@ -402,7 +402,7 @@ a {
     font-family: Arial, Helvetica, sans-serif;
     color: #0c6a93;
     font-size: 12px;
-    padding-right: 10px;
+    padding-right: 12px;
   }
   .hash-container .hash-item:first-child {
     margin-left: 0;
@@ -415,7 +415,7 @@ a {
     position: relative;
     margin-top: 10px;
     border-bottom: 1px solid #0c6a93;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
   }
   .container-optiones-dekstop .option-desktop-right {
     display: flex;

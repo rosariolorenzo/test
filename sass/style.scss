@@ -424,7 +424,7 @@ $font-page : sans-serif;
 			font-family: Arial, Helvetica, sans-serif;
 			color: #0c6a93;
 			font-size: 12px;
-    		padding-right: 10px;
+    		padding-right: 12px;
 
 			&:first-child {
 				margin-left: 0;
@@ -439,7 +439,7 @@ $font-page : sans-serif;
 		position: relative;
 		margin-top: 10px;
 		border-bottom: 1px solid $color-background-page;
-		margin-bottom: 8px;
+		margin-bottom: 10px;
 
 		.option-desktop-right {
 			display: flex;

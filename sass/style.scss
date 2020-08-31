@@ -168,7 +168,6 @@ $font-page : sans-serif;
 .container-imgs{
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
 }
 .container-img{
 	
@@ -213,6 +212,7 @@ $font-page : sans-serif;
 	.container-name{
 		display: flex;
 		justify-content: space-between;
+		width: 155px;
 		.name{
 			color: $color-background-page;
 			font-family: sans-serif;
@@ -271,6 +271,7 @@ $font-page : sans-serif;
 	display: none;
 }
 @media (min-width: 992px){
+
 	
 	.header-dekstop{
 		display: flex;
@@ -308,7 +309,7 @@ $font-page : sans-serif;
 			position: relative;
 			box-sizing: border-box;
 			width: auto;
-			max-width: 300px;
+			max-width: 243px;
 			margin-top: 6px;
 			background-color: #f0f1f1;
 			height: 68px;
@@ -414,12 +415,16 @@ $font-page : sans-serif;
 	.hash-container {
 		display: flex;
 		align-items: center;
-		padding: 0 30px;
-		margin-bottom: 6px;
+		overflow: hidden;
+    	height: 16px;
+		text-align: left;
+		margin-left: 35px;
+	
 		.hash-item {
+			font-family: Arial, Helvetica, sans-serif;
 			color: #0c6a93;
 			font-size: 12px;
-    		margin: 0 12px;
+    		padding-right: 10px;
 
 			&:first-child {
 				margin-left: 0;
@@ -428,7 +433,7 @@ $font-page : sans-serif;
 		}
 	}
 	.container-optiones-dekstop{
-		padding-left: 50px;
+		padding-left: 35px;
 		display: flex;
 		flex-direction: row;
 		position: relative;
@@ -480,24 +485,17 @@ $font-page : sans-serif;
 	.grid-wrapper {
 		display: flex;
 		justify-content: space-between;
+		margin-top: 8px;
 	}
 	.container-imgs{
-		width: 100%;
-		margin-right: 50px;
-		
-	}
-	.container-img{
-		width: 240px;
-		height: 208;
-		.box-img{
-			width: 100%;
-		}
+			margin-left: 30px;
+			margin-right: 115px;
 	}
 	
 	.banner-desktop {
 		max-height: 630px;
 		width: 100%;
-		max-width:  230px;
+		max-width:  186px;
     	text-align: center;
 		background: rgba(0,0,0,0.2);
 		display: flex;

@@ -477,6 +477,8 @@ a {
   }
   .banner-desktop .dismiss-banner {
     text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
     color: white;
     background-color: #f47321;
     font-family: sans-serif;

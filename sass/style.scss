@@ -9,6 +9,7 @@ a {
 	text-decoration: none;
 }
 $colorIcon: white;
+
 $color-background-page: #0c6a93;
 $color-boxItems-navSide: #145374;
 $color-font: white;
@@ -28,7 +29,7 @@ $font-page : sans-serif;
 	font-size: 25px;
 }
 .logo{
-	background-color: white;
+	background-color: $colorIcon;
 	height: 30px;
     width: 124px;
 	margin: 0 auto;
@@ -277,7 +278,7 @@ $font-page : sans-serif;
 		display: flex;
 		height: 80px;
 		width: 100%;
-		background-color: #f3ecc2;
+		background-color: #006a71;
 		flex-direction: row;
 		padding: 6px;
 		
